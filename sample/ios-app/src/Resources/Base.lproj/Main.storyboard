@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zIh-nI-gcX">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="snE-Ct-w85">
+            <objects>
+                <navigationController id="zIh-nI-gcX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aGe-Yj-KQZ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TTy-86-aNs" kind="relationship" relationship="rootViewController" id="y6u-Ao-rTD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpF-aw-Lyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5158" y="-1482"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="B5V-K5-FDE">
+            <objects>
+                <viewController id="TTy-86-aNs" customClass="TestViewController" customModule="mokoSampleTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcA-zH-akF"/>
+                        <viewControllerLayoutGuide type="bottom" id="gTY-6T-yQv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KxK-oh-5KO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8I-0D-Hsj">
+                                <rect key="frame" x="143" y="269" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="onStartPressed" destination="TTy-86-aNs" eventType="touchUpInside" id="eAQ-0p-RaW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epb-1S-6iZ">
+                                <rect key="frame" x="144" y="315" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="onStopPressed" destination="TTy-86-aNs" eventType="touchUpInside" id="dWP-FI-s8C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J8I-0D-Hsj" firstAttribute="centerY" secondItem="KxK-oh-5KO" secondAttribute="centerY" id="4XW-T3-6Cg"/>
+                            <constraint firstItem="J8I-0D-Hsj" firstAttribute="centerX" secondItem="KxK-oh-5KO" secondAttribute="centerX" id="Edq-oh-fgB"/>
+                            <constraint firstItem="Epb-1S-6iZ" firstAttribute="top" secondItem="J8I-0D-Hsj" secondAttribute="bottom" constant="16" id="Td5-fG-Swf"/>
+                            <constraint firstItem="Epb-1S-6iZ" firstAttribute="centerX" secondItem="KxK-oh-5KO" secondAttribute="centerX" id="ZbF-OA-Ya1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test" id="0jM-60-fjM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxh-nl-GiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4296" y="-1482"/>
+        </scene>
+    </scenes>
+</document>
