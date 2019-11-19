@@ -1,5 +1,5 @@
 ![moko-time](img/logo.png)  
-[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-core/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-core/_latestVersion) ![kotlin-version](https://img.shields.io/badge/kotlin-1.3.50-orange)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-time/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-time/_latestVersion) ![kotlin-version](https://img.shields.io/badge/kotlin-1.3.60-orange)
 
 # Mobile Kotlin time
 This is a Kotlin Multiplatform library that supports time and Timers.  
@@ -27,6 +27,8 @@ This is a Kotlin Multiplatform library that supports time and Timers.
 ## Versions
 - kotlin 1.3.50
   - 0.1.0
+- kotlin 1.3.60
+  - 0.2.0
 
 ## Installation
 root build.gradle  
@@ -41,7 +43,7 @@ allprojects {
 project build.gradle
 ```groovy
 dependencies {
-    commonMainApi("dev.icerock.moko:time:0.1.0")
+    commonMainApi("dev.icerock.moko:time:0.2.0")
 }
 ```
 
