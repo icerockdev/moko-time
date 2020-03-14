@@ -1,5 +1,5 @@
 ![moko-time](img/logo.png)  
-[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-time/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-time/_latestVersion) ![kotlin-version](https://img.shields.io/badge/kotlin-1.3.60-orange)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-time/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-time/_latestVersion) ![kotlin-version](https://img.shields.io/badge/kotlin-1.3.70-orange)
 
 # Mobile Kotlin time
 This is a Kotlin Multiplatform library that supports time and Timers.  
@@ -20,7 +20,7 @@ This is a Kotlin Multiplatform library that supports time and Timers.
 - **getCurrentMilliSeconds** in common code.
 
 ## Requirements
-- Gradle version 5.4.1+
+- Gradle version 5.6.4+
 - Android API 16+
 - iOS version 9.0+
 
@@ -29,6 +29,8 @@ This is a Kotlin Multiplatform library that supports time and Timers.
   - 0.1.0
 - kotlin 1.3.60
   - 0.2.0
+- kotlin 1.3.70
+  - 0.3.0
 
 ## Installation
 root build.gradle  
@@ -43,13 +45,8 @@ allprojects {
 project build.gradle
 ```groovy
 dependencies {
-    commonMainApi("dev.icerock.moko:time:0.2.0")
+    commonMainApi("dev.icerock.moko:time:0.3.0")
 }
-```
-
-settings.gradle  
-```groovy
-enableFeaturePreview("GRADLE_METADATA")
 ```
 
 ## Usage
@@ -90,7 +87,7 @@ Please see more examples in the [sample directory](sample).
 ## Set Up Locally 
 - The [time directory](time) contains the `time` library;
 - The [sample directory](sample) contains sample apps for Android and iOS; plus the mpp-library connected to the apps;
-- For local testing use the `:time:publishToMavenLocal` gradle task - so that sample apps use the locally published version.
+- For local testing use the `./publishToMavenLocal.sh` script - so that sample apps use the locally published version.
 
 ## Contributing
 All development (both new features and bug fixes) is performed in the `develop` branch. This way `master` always contains the sources of the most recently released version. Please send PRs with bug fixes to the `develop` branch. Documentation fixes in the markdown files are an exception to this rule. They are updated directly in `master`.
