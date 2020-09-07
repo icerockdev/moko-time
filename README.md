@@ -1,3 +1,5 @@
+# Project deprecated, use https://github.com/Kotlin/kotlinx-datetime start from kotlin 1.4.0.
+
 ![moko-time](img/logo.png)  
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/icerockdev/moko/moko-time/images/download.svg) ](https://bintray.com/icerockdev/moko/moko-time/_latestVersion) ![kotlin-version](https://img.shields.io/badge/kotlin-1.3.70-orange)
 
